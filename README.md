@@ -7,7 +7,7 @@
 Latest stable version:
 
 ```bash
-pip install -U httpie-httpsignature-auth
+pip install -U httpie-httpsig-auth
 ```
 Latest developing version:
 ```
