@@ -12,7 +12,7 @@ setup(
     zip_safe=False,
     entry_points={
         'httpie.plugins.auth.v1': [
-            'httpie_httpsig_auth = httpie_httpsig_auth:HTTPSignatureAuth'
+            'httpie_httpsig_auth = httpie_httpsig_auth:HTTPSignatureAuthPlugin'
         ]
     },
     install_requires=[
