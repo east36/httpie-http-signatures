@@ -11,7 +11,7 @@ pip install -U httpie-httpsig-auth
 ```
 Latest developing version:
 ```
-pip install -U https://github.com/manuthu/httpie-http-signatures/archive/master.zip
+pip install -U https://github.com/east36/httpie-http-signatures/archive/master.zip
 ```
 
 ## Usage

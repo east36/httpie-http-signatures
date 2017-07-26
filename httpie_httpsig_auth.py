@@ -8,7 +8,7 @@ from httpie.plugins import AuthPlugin
 
 __version__ = '0.1.0'
 __author__ = 'Mike Manuthu'
-__licence__ = 'MIT'
+__licence__ = 'BSD'
 
 
 class HTTPSignatureAuth(requests.auth.AuthBase):
