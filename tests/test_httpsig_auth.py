@@ -20,8 +20,8 @@ class TestHTTPSignatures(unittest.TestCase):
             path_url='/')
         request_mock = RequestMock(**request_params)
         httpsig_auth = HTTPSignatureAuth('key_id', 'private_key')
+        # Make a signed request
         signed_request = httpsig_auth(request_mock)
-        # Split the authorisation headers
         auth = signed_request.headers['authorization']
         assert auth is not None
         assert auth == 'Signature headers="date (request-target) host",keyId="key_id",algorithm="hmac-sha256",signature="rrFf9OYggCCxjTCv2hIuH+OEI2gbeaFUlc1viEGQdfo="' # noqa
