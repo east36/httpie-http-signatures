@@ -1,17 +1,15 @@
-import httpie_httpsig_auth
-
 from setuptools import setup
 
 
 setup(
     name='httpie-httpsig-auth',
     description='HTTP Signatures plugin for HTTPie.',
-    version='0.1.0',
-    author=httpie_httpsig_auth.__author__,
+    version='0.1.1',
+    author="Mike Manuthu",
     author_email='mmanuthu@east36.co.ke',
     url='https://github.com/east36/httpie-http-signatures',
     download_url='https://github.com/east36/httpie-http-signatures',
-    license=httpie_httpsig_auth.__licence__,
+    license="MIT",
     py_modules=['httpie_httpsig_auth'],
     zip_safe=False,
     entry_points={
