@@ -9,7 +9,7 @@ setup(
     author_email='mmanuthu@east36.co.ke',
     url='https://github.com/east36/httpie-http-signatures',
     download_url='https://github.com/east36/httpie-http-signatures',
-    license="MIT",
+    license="BSD",
     py_modules=['httpie_httpsig_auth'],
     zip_safe=False,
     entry_points={
@@ -29,7 +29,7 @@ setup(
         'Intended Audience :: Developers',
         'Intended Audience :: System Administrators',
         'Environment :: Plugins',
-        'License :: OSI Approved :: MIT License',
+        'License :: OSI Approved :: BSD License',
         'Topic :: Internet :: WWW/HTTP',
         'Topic :: Utilities',
         'Topic :: System :: Networking',
