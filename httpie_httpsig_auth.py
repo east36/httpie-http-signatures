@@ -57,8 +57,8 @@ class HTTPSignatureAuth(requests.auth.AuthBase):
             if "digest" not in request.headers:
                 m = hashlib.sha256(body.encode("utf-8"))
                 base64digest = base64.b64encode(m.digest())
-                # base64string = base64digest.decode("utf-8")
-                request.headers["digest"] = 'SHA-256=' + base64digest
+                base64string = base64digest.decode("utf-8")
+                request.headers["digest"] = 'SHA-256=' + base64string
             request.headers.setdefault("content-length", len(body))
 
     def __call__(self, request):
