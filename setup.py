@@ -4,7 +4,7 @@ from setuptools import setup
 setup(
     name='httpie-httpsig-auth',
     description='HTTP Signatures plugin for HTTPie.',
-    version='0.1.1',
+    version='0.3',
     author="Mike Manuthu",
     author_email='mmanuthu@east36.co.ke',
     url='https://github.com/east36/httpie-http-signatures',
