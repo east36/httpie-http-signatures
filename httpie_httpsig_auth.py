@@ -53,9 +53,11 @@ class HTTPSignatureAuth(requests.auth.AuthBase):
             "host", six.moves.urllib.parse.urlparse(request.url).netloc)
 
         if sign_body:
-            body = request.body or ""
+            body = request.body or b""
             if "digest" not in request.headers:
-                m = hashlib.sha256(body.encode("utf-8"))
+                if not isinstance(body, bytes):
+                    body = body.encode("utf-8")
+                m = hashlib.sha256(body)
                 base64digest = base64.b64encode(m.digest())
                 base64string = base64digest.decode("utf-8")
                 request.headers["digest"] = 'SHA-256=' + base64string
